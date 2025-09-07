@@ -17,15 +17,15 @@
 
 @media (max-width: 1199.98px) {
   .container {
-    padding: 0px 80px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .container {
     padding: 0px 60px;
   }
 }
+
+/* @media (max-width: 991.98px) {
+  .container {
+    padding: 0px 60px;
+  }
+} */
 
 @media (max-width: 767.98px) {
   .container {
@@ -552,8 +552,8 @@ main aside.active {
     display: block;
   }
   main aside {
-    margin-top: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 90px;
+    background-color: #fff;
     position: absolute;
     height: 100%;
     z-index: 1;
@@ -564,10 +564,21 @@ main aside.active {
 
 /* ################# Start Main Content #################  */
 main .main-content {
-  margin-top: 40px;
-  padding: 10px 40px;
+  padding: 0 40px 10px 40px;
 }
 main .main-content .main-content-header {
+  margin: 20px 0;
+}
+main .main-content .main-content-header i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+main .main-content .main-content-header i:hover {
+  color: var(--primary-color);
+}
+main .main-content .main-content-header i.active {
+  color: var(--primary-color);
 }
 main .main-content .main-content-products {
   display: flex;
@@ -582,7 +593,7 @@ main .main-content .main-content-products .product {
   transition: all 0.5s ease;
 }
 main .main-content .main-content-products .product:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 main .main-content .main-content-products .product .product-details {
@@ -636,10 +647,20 @@ main .main-content .main-content-products .product span {
   letter-spacing: 2px;
 }
 
-@media (max-width: 767.98px){
+@media (max-width: 767.98px) {
   main .main-content {
-  margin-top: 40px;
-  padding: 10px 0;
+    margin-top: 40px;
+    padding: 10px 0;
+  }
 }
+
+main .main-content .main-content-products .product.product-menu-bar {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
+
+main .main-content .main-content-products .product.product-menu-bar img {
+  height: 300px;
 }
 /* ################# End Main Content #################  */

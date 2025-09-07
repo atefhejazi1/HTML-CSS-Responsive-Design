@@ -30,3 +30,21 @@ btn.addEventListener("click", () => {
 
   sidebar.classList.toggle("active");
 });
+
+let menuBar = document.querySelector("#menu-bar");
+let categoryBar = document.querySelector("#category-bar");
+
+let products = document.querySelectorAll(
+  "main .main-content .main-content-products .product"
+);
+
+menuBar.onclick = function () {
+  products.forEach((product) => {
+    product.classList.add("product-menu-bar");
+  });
+};
+categoryBar.onclick = function () {
+  products.forEach((product) => {
+    product.classList.remove("product-menu-bar");
+  });
+};
