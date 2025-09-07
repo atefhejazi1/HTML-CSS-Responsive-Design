@@ -304,12 +304,14 @@ header .middle-nav-inner .middle-nav-love-cart .cart-info {
 header .bottom-nav {
   padding-top: 20px;
   margin-top: 20px;
-  box-shadow: 10px 10px 10px #ccc;
+  box-shadow: 5px 5px 10px #ccc;
 }
+
 header .bottom-nav-inner {
   display: flex;
   border-top: 1px solid #ccc;
 }
+
 header .bottom-nav-inner .all-categories-header {
   padding: 10px;
   width: 20%;
@@ -526,5 +528,40 @@ main aside .product-tags .tags div:hover {
 }
 main aside .product-tags .tags div:hover a {
   color: var(--primary-color);
+}
+
+main .appearData {
+  display: none;
+}
+main #filter {
+  margin-bottom: 30px;
+  display: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 5px 20px;
+  border: 0;
+  font-size: 20px;
+  border-radius: 2px;
+}
+main aside.active {
+  left: 0;
+}
+@media (max-width: 767.98px) {
+  main #filter {
+    cursor: pointer;
+    display: block;
+  }
+  main aside {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    /* width: 100%; */
+    height: 100%;
+    z-index: 1;
+    /* top: 0;
+    bottom: 0; */
+    left: -400px;
+    /* display: none; */
+  }
 }
 /* ################# End Main #################  */
