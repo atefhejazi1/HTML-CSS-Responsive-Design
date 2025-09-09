@@ -39,11 +39,16 @@ let products = document.querySelectorAll(
 );
 
 menuBar.onclick = function () {
+  menuBar.style.color = "var(--primary-color)";
+  categoryBar.style.color = "#000";
+
   products.forEach((product) => {
     product.classList.add("product-menu-bar");
   });
 };
 categoryBar.onclick = function () {
+  categoryBar.style.color = "var(--primary-color)";
+  menuBar.style.color = "#000";
   products.forEach((product) => {
     product.classList.remove("product-menu-bar");
   });

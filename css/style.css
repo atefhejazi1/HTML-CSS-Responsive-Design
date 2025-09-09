@@ -567,7 +567,24 @@ main .main-content {
   padding: 0 40px 10px 40px;
 }
 main .main-content .main-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 20px 0;
+}
+main .main-content .main-content-header div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+main .main-content .main-content-header div:nth-child(1) h3 {
+  color: var(--secondary-color);
+  margin-left: 20px;
+  font-size: 15px;
+}
+main .main-content .main-content-header div:nth-child(2) select {
+  border-radius: 15px;
+  padding: 5px;
+  font-weight: bold;
 }
 main .main-content .main-content-header i {
   font-size: 20px;
@@ -591,9 +608,11 @@ main .main-content .main-content-products .product {
   flex: 1 1 calc(25% - 20px);
   min-width: 200px;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 main .main-content .main-content-products .product:hover {
   transform: scale(1.02);
+  box-shadow: 5px 5px 5px #ccc, -5px -5px 5px #ccc;
 }
 
 main .main-content .main-content-products .product .product-details {
@@ -663,4 +682,31 @@ main .main-content .main-content-products .product.product-menu-bar {
 main .main-content .main-content-products .product.product-menu-bar img {
   height: 300px;
 }
+
+main .show-more {
+  margin: 50px 0;
+}
+main .show-more button {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+main .show-more button i {
+  margin-right: 10px;
+}
+
+main .show-more button:hover {
+  box-shadow: 5px 5px 5px #ccc, -5px -5px 5px #ccc;
+}
+
+main .recently-viewed-header {
+  color: #3d3a3a;
+  margin: 30px 0;
+  font-size: 25px;
+}
+
 /* ################# End Main Content #################  */
