@@ -353,7 +353,8 @@ header .bottom-nav-inner .all-categories-header i {
   font-size: 25px;
 }
 
-header .bottom-nav-inner .all-categories-header h2 {}
+header .bottom-nav-inner .all-categories-header h2 {
+}
 
 header .bottom-nav-inner ul {
   width: 80%;
@@ -455,7 +456,7 @@ main {
   /* border: 1px solid #ccc; */
   /* box-shadow: 5px 5px 5px #ccc, -5px -5px 5px #ccc; */
 
-  padding: 40px;
+  padding: 40px 0;
 }
 
 main aside {
@@ -533,13 +534,15 @@ main aside .features .features-item .features-item-inner button {
   font-size: 16px;
 }
 
-main aside .features .features-item .features-item-inner ul {}
+main aside .features .features-item .features-item-inner ul {
+}
 
 main aside .features .features-item .features-item-inner ul li {
   list-style: none;
 }
 
-main aside .features .features-item .features-item-inner ul li a {}
+main aside .features .features-item .features-item-inner ul li a {
+}
 
 main aside .product-tags {
   margin-top: 40px;
@@ -691,7 +694,16 @@ main .main-content .main-content-products .product img {
   height: 200px;
 }
 
-main .main-content .main-content-products .product img main .main-content .main-content-products .product .stars {
+main
+  .main-content
+  .main-content-products
+  .product
+  img
+  main
+  .main-content
+  .main-content-products
+  .product
+  .stars {
   margin: 10px 0;
 }
 
@@ -708,7 +720,12 @@ main .main-content .main-content-products .product .stars i:hover {
   color: var(--primary-color);
 }
 
-main .main-content .main-content-products .product .stars i:nth-child(-n + 4):hover {
+main
+  .main-content
+  .main-content-products
+  .product
+  .stars
+  i:nth-child(-n + 4):hover {
   color: #000;
 }
 
@@ -821,7 +838,6 @@ main .recently-viewed-header {
   border: 0;
 }
 
-
 /* ################# End Most Search Keywords #################  */
 /* ################# Start Footer #################  */
 footer {
@@ -844,7 +860,8 @@ footer .footer-inner div h2 {
   margin-bottom: 20px;
 }
 
-footer .footer-inner div ul {}
+footer .footer-inner div ul {
+}
 
 footer .footer-inner div p {
   color: #fff;
@@ -864,12 +881,10 @@ footer .footer-inner div ul li i {
 footer .footer-inner div ul li a {
   text-decoration: none;
   color: var(--secondary-color);
-
 }
 
 footer .footer-inner div ul li a:hover {
   color: var(--secondary-color);
-
 }
 
 footer .footer-inner div form {
@@ -903,7 +918,6 @@ footer .footer-inner div i {
   margin-right: 10px;
 }
 
-
 @media (max-width: 575.98px) {
   footer .footer-inner div p {
     font-size: 15px;
@@ -916,13 +930,11 @@ footer .footer-inner div i {
   footer .footer-inner div {
     flex: 1 1 170px;
   }
-
 }
 
 footer .footer-copyRight {
   background-color: #000;
   color: #fff;
-
 }
 
 footer .footer-copyRight .copyRight-inner {
